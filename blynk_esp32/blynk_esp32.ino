@@ -85,6 +85,7 @@ void getSoilMoist(){
     soilMoist += analogRead(SOIL_MOIST_PIN); //Đọc giá trị cảm biến độ ẩm đất
     delay(50);   // Đợi đọc giá trị ADC
   }
+  soilMoist = soilMoist / (i);
   soilMoist = map(soilMoist, 1023, 0, 0, 100);
 }
 

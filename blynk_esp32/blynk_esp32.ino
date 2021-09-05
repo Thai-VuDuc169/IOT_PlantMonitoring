@@ -86,7 +86,7 @@ void getSoilMoist(){
     delay(50);   // Đợi đọc giá trị ADC
   }
   soilMoist = soilMoist / (i);
-  soilMoist = map(soilMoist, 1023, 0, 0, 100);
+  soilMoist = map(soilMoist, 0, 1023, 0, 100);
 }
 
 void getDhtMqData(){
